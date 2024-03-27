@@ -18,3 +18,9 @@ Wed 27 Mar 2024 06:48:56 PM UTC:
  1 file changed, 9 insertions(+), 2 deletions(-)
  tests:  0|0
 bda3396
+Wed 27 Mar 2024 06:55:02 PM UTC: 
+ list.c | 20 +++++++++++++++-----
+ 1 file changed, 15 insertions(+), 5 deletions(-)
+ tests:  11|1
+total_score: 60/70
+3f958e4
