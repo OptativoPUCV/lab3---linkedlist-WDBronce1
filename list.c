@@ -90,7 +90,7 @@ void * prevList(List * list)
 //Ejercicio 4 ####################################
 void pushFront(List * list, void * data) 
 {
-  if(list == NULL || list -> head == NULL)
+  if(list == NULL)
   {
     return;
   }
@@ -145,7 +145,14 @@ void * popCurrent(List * list)
     return NULL;
   }
   Node * NodoEliminado = list->current;
-  list->current -> prev -> next = list->current->next;
+  if(list->current->prev != NULL)
+  {
+    list->current->prev->next = list->current->next;
+  }
+  else
+  {
+    list->head = list->current->next;
+  }
   list->current -> next ->prev = list ->current->prev;
   list->current -> next = NULL;
   list->current -> prev = NULL;
